@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <!-- <script src="category.js"></script>
+    <script src="vendor.js"></script>
+    <script src="product.js"></script> -->
+    <body>
+        <script type="module">
+
+            import { Category } from "./category.js"
+            import { Vendor } from "./vendor.js"
+            import { Product } from "./product.js"
+
+            //category objects
+            var books       = new Category("BO", "Books");
+            var electronics = new Category("EL", "Electronics");
+            var apparels    = new Category("AP", "Aparrels");
+            var households  = new Category("HI", "Households Items");
+            // var categories = [books, electronics, apparels, households];
+
+            //vendor objects
+            var star = new Vendor (1, "Star Enterprise", "7834987234");
+            var cloudtail = new Vendor (2, "Cloudtail Retail Lda", "8798776766");
+            // var vendors = [star, cloudtail];
+
+            //product objects
+           var harryPotter = new Product(1, "Harry Potter and The Half Blood Prince",3, books,[star,cloudtail]);
+           var angels      = new Product(2, "Angels and Demos",2.50, books,[star]);
+           var panasonic   = new Product(3, "Panasonic 4K UHD",5999.99, electronics,[cloudtail]);
+           var samsung     = new Product(4, "Samsung Galaxy",69.99, electronics,[cloudtail]);
+           var shoes       = new Product(5, "M-Rock runing Shoes",34.5, apparels,[star,cloudtail]);
+           var bags        = new Product(6, "Kristo Leather Bags",67.8, apparels,star);
+           var chair       = new Product(7, "KV Mesh Back Revolving Chair",22.75, households,[cloudtail]);
+           var bookshelf   = new Product(8, "Turntop Woodon Bookshelf",32.99, households,[star,cloudtail]);
+            var products = [harryPotter, angels, panasonic, samsung, shoes, bags, chair, bookshelf];
+
+            for (var i = 0; i < products.length; i++){
+                products[i].getProduct();
+            }
+        </script>
+    </body>
+</html>

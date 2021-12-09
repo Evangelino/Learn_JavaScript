@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+        var heights = [123,334,234,556];
+            heights[0] = 125;
+            heights.push(132);
+
+        //    var average =  (heights[0] + heights [1] + heights [2] + heights [3] + heights [4])/5;
+        //     console.log(average);
+            /*console.log(heights);
+            console.log(heights[0]);
+            console.log(heights[3]);
+            console.log(heights[4]);*/
+
+            var total = 0;
+            for( i = 0; i < heights.length; i++){
+                total += heights[i];
+            }
+            
+            console.log(total/heights.length);
+        </script>
+    </body>
+</html>

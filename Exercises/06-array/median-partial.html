@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var agrupamento =[10,24,32,48,49,52,65,73,78,87,91,78];
+            calculamedian = 0;
+
+            if(agrupamento.length % 2 == 0){
+                calculamedian = agrupamento.length /2;
+                var median = agrupamento[calculamedian];
+                console.log("Median is : "+median);
+            }else{
+                calculamedian = (agrupamento.length-1) /2;
+                var median = agrupamento[calculamedian];
+                console.log("Median is : "+median);
+            }
+           /*  calculaMedian = (agrupamento.length - 1)/2;
+            var median  = agrupamento[calculaMedian];
+            console.log("Median is : "+ median); */
+
+
+        </script>
+    </body>
+</html>
