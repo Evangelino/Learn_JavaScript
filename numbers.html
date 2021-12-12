@@ -10,7 +10,41 @@
     
     <script>
         //represents of large numbers
+        console.log('Resents of large numbers');
         console.log(1000000000);
+        console.log("Underscore('100_000_000'): "+100_000_000); //but when you execute the code, the underscore desapear
+        console.log("Exponencial 1e9: "+1e9); //1 x 10 power 9
+
+        //Standard Positional Numeral System
+        // https://en.wikipedia.org/wiki/List_of_numeral_systems#Standard_positional_numeral_systems
+        console.log('');
+        console.log('Standard Positional Numeral System');
+        console.log();
+        console.log(0b11111111);
+        console.log(0o377);
+        console.log(0xff);
+
+        //Decimal to Integer
+        //Example decimal number: 45.947
+        //Round - 5.1 to 5.4 -> 5
+        //Round - 5.5 to 5.9 -> 6
+        console.log('');
+        console.log("Conver Decimal to Integer");
+        console.log("floor(): " + Math.floor(5.9)); /// 5.9 -> 5
+        console.log("ceil(): " + Math.ceil(5.1)); /// 5.1 -> 6
+        console.log("round(): " + Math.round(5.4)); /// 5.4 -> 5
+        console.log("round(): " + Math.round(5.5)); /// 5.5 -> 6
+        console.log("round(): " + Math.round(5.8)); /// 5.8 -> 6
+
+        //Find out if it is number or not
+        //isNaN - Is Not a Number
+        console.log('');
+        console.log('isNaN?');
+        console.log("isNaN('3a'): " + isNaN('3a'));
+        console.log("isNaN('5$'): " + isNaN('5$'));
+        console.log("isNaN('15'): " + isNaN('15'));
+        console.log("isNaN('9.25'): " + isNaN('9.25'));
+
     </script>
 
 </body>
