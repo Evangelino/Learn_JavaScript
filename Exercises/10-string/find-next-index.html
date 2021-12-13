@@ -12,15 +12,19 @@
     <h4>Find Character Position</h4>
 
     <script>
+
+        link1 = "https://linocluster.co.org/lino/profile";
+
         //            0123456789012345678
         var fruits = "Orange|Grapes|Apple";
-        var searchterm = 'Orange';
-        
         var firstPipePosition = fruits.indexOf("|");
         var secondPipePosition = fruits.indexOf("|",firstPipePosition+1);
         console.log("String: " + fruits);
         console.log("1st Pipe Position: " + firstPipePosition);
         console.log("2nd Pipe Position: " + secondPipePosition);
+
+        var duasbarrasposition = link1.indexOf("//");
+        console.log("duas barras position: "+duasbarrasposition);
 
     </script>
     
