@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Exercises About String</title>
+</head>
+<body>
+
+    <h4>The Website is Secure or not</h4>
+
+    <script>
+
+     var link1 = "http://en.wikipedia.org";   
+     var link2 = "https://en.wikipedia.org";
+
+     displaySecure(link1);
+     displaySecure(link2);
+     
+     
+     function displaySecure(link){
+        if(link.startsWith('http://')){
+            console.log(link+" is Not Secure");
+        }else if (link.startsWith('https://')) {
+            console.log(link+" is Secure")
+        }
+     }
+
+    </script>
+    
+</body>
+</html>
