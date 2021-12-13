@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifth Exercise About String</title>
+</head>
+<body>
+
+    <h4>Find a Domain Name</h4>
+
+    <script>
+
+        var link1 = "https://en.wikipedia.org/wiki/Main_Page";
+        var link2 = "http://developer.mozila.org/docs/Web/JavaScript";
+
+        console.log(link1);
+        console.log("Domain Name: " +getDomain(link1));
+        console.log(link2);
+        console.log("Domain Name: " +getDomain(link2));
+        link1.substring();
+
+        function getDomain(link){
+            var startIndex = link.indexOf("//");
+            var endIndex = link.indexOf("/",startIndex + 2);
+            return link.substring(startIndex + 2,endIndex);
+        }
+
+    </script>
+    
+</body>
+</html>
