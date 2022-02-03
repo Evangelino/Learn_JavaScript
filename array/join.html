@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join() Function</title>
+</head>
+<body>
+    <h2>Join Function</h2>
+
+    <script>
+        let names = ['Orange','Apple','Grapes'];
+
+        let nameList = '';
+
+        for(let name of names){
+            nameList += name+', ';
+        }
+        console.log("\n === Using For ===");
+        console.log("-> Directly Printed with Coma <-");
+        console.log(nameList);
+        console.log("-> Using substring merthod to eliminate the last coma <-");
+        console.log(nameList.substring(0,nameList.length-2));
+
+        console.log("Using join(): "+names.join(', '));
+
+    </script>
+    
+</body>
+</html>
