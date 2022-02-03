@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreach() Function</title>
+</head>
+<body>
+    <h2>Foreach() Function</h2>
+
+    <script>    
+    
+        let employees = [
+            {id: 1 , name:"Lino"},
+            {id: 2 , name:"Agu"},
+            {id: 3 , name:"Mica"},
+            {id: 4 , name:"Jai"}
+        ];
+
+            console.log("=== Using For ===");
+
+        for (let employee of employees){
+            console.log(employee.name);
+        }
+
+        /**
+         * Foreach
+         * Internally run a loops on the arrays items
+         * Calls the arrow function for each array item
+         * The arrow function is called with array item as a parameter
+         **/    
+
+         console.log("=== Using Foreach ===");
+         employees.forEach(employee=>console.log(employee.name));
+
+    </script>
+
+</body>
+</html>
