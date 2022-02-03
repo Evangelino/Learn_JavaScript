@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Objects</title>
+</head>
+<body>
+    <h2>Sorting Objects</h2>
+
+    <script>
+        var employees = [
+            {id: 3, name: "Elliot"},
+            {id: 2, name: "Sam"},
+            {id: 4, name: "John"},
+            {id: 1, name: "John"}
+        ];
+
+        console.log("=== Sorting by id ===");
+        employees.sort((a,b)=> a.id - b.id);
+        displayEmployees(employees);
+
+        console.log("=== Sorting by name ===");
+        employees.sort((a,b)=> a.name > b.name ? 1 : -1);
+        displayEmployees(employees);
+
+        function displayEmployees(){
+            console.log('\n\n');
+            for (let employee of employees){
+                console.log(employee);
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>
