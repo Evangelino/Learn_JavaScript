@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different date formats</title>
+</head>
+<body>
+
+    <h2>Diferrent date Formats</h2>
+
+    <script>
+        let now = new Date();
+
+            console.log("new Date(): "+now);
+            console.log("getDate(): "+now.getDate());
+            console.log("getMOnth(): "+now.getMonth()+" (Months is a index number starting from 0 to 11; 0-Jan, 11-Dec)");
+            console.log("getYear(): "+now.getFullYear());
+            console.log("getDay(): "+now.getDay()+" (Sun to Sat, 0 to 6)");
+            console.log("getHours(): "+now.getHours());
+            console.log("getMinutes(): "+now.getMinutes());
+            console.log("getSeconds(): "+now.getSeconds());
+            console.log("getMiliseconds(): "+now.getMilliseconds());
+
+            console.log("getUTCHours(): "+now.getUTCHours());
+
+            console.log('toString() - ' + now.toString());
+            console.log('toDateString() - ' + now.toDateString());
+            console.log('toJSON() - ' + now.toJSON());
+
+    </script>
+
+    
+</body>
+</html>
