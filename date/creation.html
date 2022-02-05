@@ -34,7 +34,16 @@
         print(new Date(2021, 2, 22));
         print(new Date(2021, 2));
 
+        console.log("\n\n");
+        console.log("=== Getting a date by Timestamp ===");
+        // Timestamp - Number of Milliseconds from 01 Jan 1970
+        print(new Date(0)); // Timestamp in Milliseconds
 
+        // 24hrs x 60min x 60sec x 1000ms = 86,400,000ms
+        print(new Date(86_400_000));
+        print(new Date(-86_400_000));
+
+        console.log(new Date().getTime());
 
         // Date that we want to print in screen - Sep 27, 2021, 10:07:20.AM.GMT+5:30 163ms
 
