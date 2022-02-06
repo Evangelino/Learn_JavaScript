@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify Date</title>
+</head>
+<body>
+    <h2>Modifying the Date</h2>
+
+    <script>
+        let date = new Date(2012, 11, 15);
+        print(date);
+
+        date.setDate(10);
+        print(date);
+
+        //setFullYear
+        //setMonth
+        //setDate
+        //setHours
+        //setMilliseconds
+        //setMinutes
+        //setSeconds
+        //setTime
+        //setUTCFullYear
+        //setUTCMonth
+
+
+        function print(date){
+            let options = {
+                year: 'numeric',
+                month: 'short', 
+                day: '2-digit', 
+                hour: '2-digit', 
+                minute: '2-digit', 
+                second: '2-digit', 
+                timeZoneName: 'short', 
+            };
+
+            console.log(date.toLocaleString("en-US",options) + " "+ date.getMilliseconds()+"ms" );
+        }
+    </script>
+    
+</body>
+</html>
