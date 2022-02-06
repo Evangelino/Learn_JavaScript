@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+</head>
+<body>
+    <h2>Exercises</h2> <br>
+    <h4>Validate the date</h4>
+
+    <script>
+        
+        let start = new Date(2010, 5, 12);
+        let end = new Date(2015, 8, 23);
+
+        if(!isValid(start, end)){
+            console.log("Start Date should be before End Date");
+        } else{
+            console.log('Valid!');
+        }
+
+        function isValid(start, end){
+            return start.getTime() < end.getTime();
+        }
+
+    </script>
+    
+</body>
+</html>
