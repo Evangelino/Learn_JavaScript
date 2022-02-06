@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COnversion String Date  to Date</title>
+</head>
+<body>
+    <h2>Convesrion of String Date to Date</h2>
+
+    <script>
+        // Conversion from String to Date
+        // Sign up form - Date of Birth
+        // <input type="text" id="dob">
+        // let dateSrtring = document.getElementById("dob").value;
+
+        let stringDate = '23/10/2021'
+        console.log("\n before Conversion");
+        console.log(stringDate);
+
+        let parts = stringDate.split('/');
+        date = new Date(parts[2], parts[1]-1, parts[0]);
+
+        console.log("\n afer Conversion");
+        console.log(date);
+    </script>
+    
+</body>
+</html>
