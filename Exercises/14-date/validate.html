@@ -12,8 +12,8 @@
 
     <script>
         
-        let start = new Date(2010, 5, 12);
-        let end = new Date(2015, 8, 23);
+        let start = new Date(2015, 5, 12);
+        let end = new Date(2010, 8, 23);
 
         if(!isValid(start, end)){
             console.log("Start Date should be before End Date");
@@ -23,6 +23,7 @@
 
         function isValid(start, end){
             return start.getTime() < end.getTime();
+            return start.getFullYear() < end.getFullYear();
         }
 
     </script>
