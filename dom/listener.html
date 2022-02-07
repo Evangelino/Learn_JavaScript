@@ -13,7 +13,8 @@
     
     <script>
         let clickOnMe = document.getElementById("clickOnMe");
-        clickOnMe.addEventListener("click", action);
+        // clickOnMe.addEventListener("click", action);
+        clickOnMe.onclick = action;
         function action(){
             console.log("Clicked on me")
         }
