@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Value</title>
+</head>
+<body>
+    <h2>Attribute Value</h2>
+
+    <p id="para">Para</p>
+
+    <script>
+        let para = document.getElementById("para");
+        console.log(para.getAttribute("id"));
+        para.setAttribute("id","Para1");
+        console.log(para.getAttribute("id"));
+    </script>
+    
+    
+</body>
+</html>
