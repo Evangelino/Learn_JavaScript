@@ -1,30 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passengers DOM Events</title>
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Passengers DOM Events</title>
+    </head>
+    <body>
 
-    <h2>Airlines Infant Policy</h2>
-    <label for="age">Age</label><br>
-    <input type="text" id="age">
-    <input type="button" id="findCategory" value="Find Category">
-    <h3 id="category"></h3>
+        <h2>Airlines Infant Policy</h2>
+        <label for="age">Age</label><br>
+        <input type="text" id="age">
+        <input type="button" id="findCategory" value="Find Category">
+        <h3 id="category"></h3>
 
-    <script>
-        let age = document.getElementById("age");
-        let findCategory = document.getElementById("findCategory");
-        let category = document.getElementById("category");
+        <script>
+            let age = document.getElementById("age");
+            let findCategory = document.getElementById("findCategory");
+            let category = document.getElementById("category");
 
-       findCategory.addEventListener("click", function(){
-           console.log("clicked");
-       });
+             findCategory.addEventListener("click", function(){
+                if (age.value < 2){
+                    console.log('Infant');
+                }else if ( age.value >= 2 && age.value<=11){
+                    console.log('Children'); 
+                }else if (age.value>11){
+                    console.log("Adult");
+            }
+        });
 
 
-    </script>
-    
-</body>
-</html>
+        </script>
+        
+    </body>
+    </html>
