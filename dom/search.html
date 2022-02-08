@@ -53,6 +53,11 @@
     <script>
         let search = document.getElementById("search");
         let items = document.getElementsByClassName("item");
+
+        for(i = 0; i < items.length; i++){
+            let name = items[i].innerText;
+            console.log(name);
+        }
         
         search.addEventListener("keyup",function(){
             console.log(search.value);
