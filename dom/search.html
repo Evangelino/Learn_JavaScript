@@ -56,9 +56,10 @@
     
     search.addEventListener("keyup",function(){
         for(i = 0; i < items.length; i++){
-            let name = items[i].innerText;
+            let name = items[i].innerText.toUpperCase();
 
-            if(name.includes(search.value)){
+            if(name.includes(search.value.toUpperCase())
+                   && search.value != "" ){
                 items[i].style.display = "block";
             } else{
                 items[i].style.display = "none";
