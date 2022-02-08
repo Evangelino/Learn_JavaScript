@@ -53,8 +53,11 @@
     <script>
         let search = document.getElementById("search");
         let items = document.getElementsByClassName("item");
-        console.log(search);
-        console.log(items);
+        
+        search.addEventListener("keyup",function(){
+            console.log(search.value);
+        });
+
     </script>
 
 </body>
