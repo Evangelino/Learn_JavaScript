@@ -23,11 +23,15 @@
         let age = document.getElementById("age");
         let category = document.getElementById("category");
         let message = document.getElementById("message");
-        console.log(message);
 
         age.addEventListener("keyup", function(){
+            message.style.display = 'none';
+            category.innerText ="";
             if(age.value == ""){
-                category.innerText ="";
+                return;
+            }
+            if(isNaN(age.value)){
+                message.style.display = 'block';
                 return;
             }
             if (age.value < 2){
