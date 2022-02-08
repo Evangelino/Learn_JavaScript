@@ -58,8 +58,12 @@
         items[i].addEventListener("click", itemClick);
     }
 
-    function itemClick(){
-        console.log("Clicked on Item");
+    function itemClick(event){
+        // console.log(event.target.innerText);
+        search.value = event.target.innerText;
+        for(let i = 0; i < items.length; i++){
+            items[i].style.display = "none";
+        }
     }
     
     search.addEventListener("keyup",function(){
