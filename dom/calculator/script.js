@@ -5,6 +5,31 @@ class Calculator {
         this.currentOperandTextElement = currentOperandTextElement;
 
     };
+
+    clear(){
+
+    }
+
+    delete(){
+
+    }
+
+    appendNumber(){
+
+    }
+
+    chooseOperation(){
+
+    }
+
+    compute(){
+
+    }
+
+    updateDisplay(){
+        
+    }
+
 }
 
 
