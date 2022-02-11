@@ -3,11 +3,13 @@ class Calculator {
     constructor(previouseOperandTextElement,currentOperandTextElement){
         this.previouseOperandTextElement = previouseOperandTextElement;
         this.currentOperandTextElement = currentOperandTextElement;
+        this.clear();
 
     };
 
     clear(){
-
+        this.currentOperandTextElement = '';
+        this.previouseOperandTextElement = '';
     }
 
     delete(){
@@ -27,7 +29,7 @@ class Calculator {
     }
 
     updateDisplay(){
-        
+
     }
 
 }
