@@ -34,7 +34,13 @@ class Calculator {
     }
 
     compute(){
+        let computation
+        const prev = parseFloat(this.previouseOperand)
+        const current = parseFloat(this.currentOperand)
 
+        if(isNaN(prev) || isNaN(current)) return
+
+        switch
     }
 
     updateDisplay(){
@@ -67,4 +73,9 @@ operationButtons.forEach(button => {
         calculator.chooseOperation(button.innerText)
         calculator.updateDisplay()
     })
+})
+
+equalsButton.addEventListener('click', button => {
+    calculator.compute()
+    calculator.updateDisplay()
 })
