@@ -40,7 +40,21 @@ class Calculator {
 
         if(isNaN(prev) || isNaN(current)) return
 
-        switch
+        switch (this.operation){
+            case '+':
+                computation = prev + current
+                break
+            case '-':
+                computation = prev - current
+                break
+            case '*':
+                computation = prev * current
+                break
+            case '÷':
+                computation = prev / current
+                break
+        }
+        
     }
 
     updateDisplay(){
