@@ -25,7 +25,7 @@ class Calculator {
 
     chooseOperation(operation){
         if(this.currentOperand == "") return
-        if(this.currentOperand !== "") {
+        if(this.previouseOperand !== "") {
             this.compute()
         }
         this.operation = operation;
@@ -53,7 +53,13 @@ class Calculator {
             case '÷':
                 computation = prev / current
                 break
+            default:
+               return
         }
+
+        this.currentOperand = computation
+        this.operation = undefined
+        this.previouseOperand = ''
         
     }
 
