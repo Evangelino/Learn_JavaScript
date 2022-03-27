@@ -10,10 +10,13 @@
 
     <script>
         let xhr = new XMLHttpRequest();
-        // console.log(xhr);
-        xhr.open("GET","https://restcountries.com/v3.1/all",false);
+        console.log(xhr.readyState);
+        xhr.addEventListener("readystatechange", function(){
+            console.log(readyState);
+        });
+        xhr.open("GET","https://restcountries.com/v3.1/all");
         xhr.send();
-        console.log("Response: "+ xhr.responseText)
+        // console.log("Response: "+ xhr.responseText)
     </script>
 
 </body>
